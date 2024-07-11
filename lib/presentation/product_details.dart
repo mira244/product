@@ -1,6 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:task_mira/presentation/product.dart';
-import 'product_model.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   final Product product;
@@ -12,7 +12,7 @@ class ProductDetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(product.name),
-        leading: const Icon(Icons.arrow_back),
+        leading: const Icon(CupertinoIcons.back),
       ),
       body: Center(
         // padding: const EdgeInsets.all(16.0),
@@ -21,8 +21,7 @@ class ProductDetailsScreen extends StatelessWidget {
           children: [
             Image.network(
               product.image,
-              height: double.infinity,
-              fit: BoxFit.fitHeight,
+              height: 200,
             ),
             SizedBox(height: 16),
             Text(product.name,

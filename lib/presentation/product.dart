@@ -6,6 +6,7 @@ class Product {
   final String description;
   final double price;
   final List<Color> colors;
+  bool isFavorite;
 
   Product({
     required this.image,
@@ -13,5 +14,6 @@ class Product {
     required this.description,
     required this.price,
     required this.colors,
+  this.isFavorite = false
   });
 }
