@@ -36,13 +36,12 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
           children: [
             Container(
               height: 200.0,
-              // Set the height of the
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 150.0, // Set the width of each
+                    width: 150.0,
                     margin: EdgeInsets.all(8.0),
                     color: Colors.blue,
                     child: Center(
